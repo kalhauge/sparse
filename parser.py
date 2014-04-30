@@ -32,9 +32,9 @@ class CouldNotParseToken(Exception):
     """ The token reached was unexpected """
     def __init__(self, token, expected):
         super(CouldNotParseToken, self).__init__(
-                'Failed parsing {expected}\n Reason: {token}'\
-                        .format(token=token, expected=expected)
-                        )
+            'Failed parsing {expected}\n Reason: {token}'\
+                .format(token=token, expected=expected)
+        )
 
 def reflex(data):
     """ Mark that data should be parsed on as is"""
